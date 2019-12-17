@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mt-5 row">
+            <div class="col-md-10">
+                <input type="text" class="form-control search" placeholder="Search for an item">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="todolist not-done">
+                 <h1>Items</h1>
+                    <input type="text" class="form-control add-todo" placeholder="Add todo">
+                    <p class="errormsg"></p>
+                    <button id="checkAll" class="btn btn-success btn-todo">Add</button>
+                    <hr>
+                    <div class="ml-3 mt-3">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>S/N</th>
+                              <th>Todo Item</th>
+                              <th>Time Added</th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody id="tr-todo"></tbody>
+                        </table>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
